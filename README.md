@@ -16,7 +16,7 @@ From zero to full-stack infra, powered by Proxmox, TrueNAS, Docker, and open-sou
 | 🌐 Network     | Pi-hole, OPNsense (placeholder) |
 | 📺 Media Stack | Jellyfin, Sonarr, Radarr, Prowlarr, qBittorrent |
 | 🐳 Containers  | Portainer, Docker Compose |
-| 💻 de Google  | Immich, Nextcloud |
+| 🤑 de Google  | Immich, Nextcloud |
 | 💻 Dev & Code  | GitHub, GitLab |
 
 ---
