@@ -1,0 +1,133 @@
+- Main Systems:
+    - Hypervisor:
+        - Proxmox:
+            icon: proxmox.svg
+            href: https://your-proxmox-domain
+            description: PVE1 - HP EliteDesk G3 SFF
+            siteMonitor: https://your-proxmox-domain
+            widget:
+                type: proxmox
+                url: http://{{PVE_LOCAL_IP}}:8006
+                username: root@pam!homepage
+                password: "{{HOMEPAGE_VAR_PVE_PASSWORD}}"
+                node: proxmox
+
+    - Storage:
+        - TrueNAS:
+            icon: truenas.svg
+            href: http://{{TRUENAS_LOCAL_IP}}
+            description: NAS - TrueNAS SCALE
+            siteMonitor: http://{{TRUENAS_LOCAL_IP}}
+
+    - Docker Management:
+        - Portainer:
+            icon: portainer.svg
+            href: https://your-portainer-domain
+            description: Docker Containers
+            siteMonitor: https://your-portainer-domain
+            widget:
+                type: portainer
+                url: https://{{PORTAINER_LOCAL_IP}}:9443
+                env: 3
+                key: "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"
+
+- Network:
+    - Pi-hole:
+        icon: pi-hole.svg
+        href: https://your-pihole-domain/admin/
+        description: DNS Ad Blocker
+        siteMonitor: https://your-pihole-domain/admin/
+
+    - OPNsense:
+        icon: opnsense.svg
+        href: http://{{OPNSENSE_LOCAL_IP}}
+        description: Firewall & Router
+
+- Media & ARR Stack:
+    - Jellyfin:
+        icon: jellyfin.svg
+        href: https://your-jellyfin-domain
+        description: Streaming Server
+        siteMonitor: https://your-jellyfin-domain
+        widget:
+            type: jellyfin
+            url: http://{{JELLYFIN_LOCAL_IP}}:8096
+            key: "{{HOMEPAGE_VAR_JELLYFIN_API_KEY}}"
+            enableBlocks: true
+            enableNowPlaying: true
+            enableUser: true
+            showEpisodeNumber: true
+            expandOneStreamToTwoRows: false
+
+    - Sonarr:
+        icon: sonarr.svg
+        href: https://your-sonarr-domain
+        description: TV Shows
+        siteMonitor: https://your-sonarr-domain
+        widget:
+            type: sonarr
+            url: https://your-sonarr-domain
+            key: "{{HOMEPAGE_VAR_SONARR_API_KEY}}"
+            enableQueue: true
+
+    - Radarr:
+        icon: radarr.svg
+        href: https://your-radarr-domain
+        description: Movies
+        siteMonitor: https://your-radarr-domain
+        widget:
+            type: radarr
+            url: http://{{RADARR_LOCAL_IP}}:7878
+            key: "{{HOMEPAGE_VAR_RADARR_API_KEY}}"
+            enableQueue: true
+
+    - Prowlarr:
+        icon: prowlarr.svg
+        href: https://your-prowlarr-domain
+        description: Indexer Manager
+
+    - qBittorrent:
+        icon: qbittorrent.svg
+        href: http://{{QBIT_LOCAL_IP}}:8080
+        description: Torrent Client
+        siteMonitor: http://{{QBIT_LOCAL_IP}}:8080
+        widget:
+            type: qbittorrent
+            url: http://{{QBIT_LOCAL_IP}}:8080
+            username: "{{HOMEPAGE_VAR_QBIT_USERNAME}}"
+            password: "{{HOMEPAGE_VAR_QBIT_PASSWORD}}"
+            enableLeechProgress: true
+
+- de Google:
+    - Immich:
+        icon: immich.svg
+        href: https://your-immich-domain
+        description: Replacement of Google Photos
+        siteMonitor: http://{{IMMICH_LOCAL_IP}}:30041
+        widget:
+          type: immich
+          url: http://{{IMMICH_LOCAL_IP}}:30041
+          key: "{{HOMEPAGE_VAR_IMMICH_APIKEY}}"
+          version: 2
+
+    - Nextcloud:
+        icon: nextcloud.svg
+        href: https://your-nextcloud-domain
+        description: Replacement of Google Drive
+        siteMonitor: https://{{NEXTCLOUD_LOCAL_IP}}:30027
+        widget:
+          type: nextcloud
+          url: https://{{NEXTCLOUD_LOCAL_IP}}:30027
+          username: "{{HOMEPAGE_VAR_NEXTCLOUD_USER}}"
+          password: "{{HOMEPAGE_VAR_NEXTCLOUD_PASS}}"
+
+- Dev & Code:
+    - GitHub:
+        icon: github.svg
+        href: https://github.com/your-username
+        description: Source Code
+
+    - Linkedin:
+        icon: linkedin.svg
+        href: https://www.linkedin.com/in/your-linkedin
+        description: My LinkedIn Profile
