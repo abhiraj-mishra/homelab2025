@@ -42,7 +42,7 @@ Every folder in this repo represents a different layer of the stack. From bare-m
 
 ## 📷 Sneak Peek
 
-> ![Dashboard Preview](./assets/screenshots/dashboard.png)
+> ![Dashboard Preview](../assets/screenshots/dashboard.png)
 
 ---
 
