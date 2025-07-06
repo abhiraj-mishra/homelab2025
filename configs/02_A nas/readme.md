@@ -1,6 +1,6 @@
 # 🧠 DIY TrueNAS Build – Cheap, Powerful & Custom NAS at Home
 
-![TrueNAS Dashboard](./assets/screenshots/truenas.png)
+![TrueNAS Dashboard]((../../assets/screenshots/truenas.png))
 
 ---
 
