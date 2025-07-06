@@ -2,6 +2,8 @@
 
 Networking for homelab setups can get expensive quickly — routers, switches, VLANs, UPS, and more. But in my case, I’ve kept it as simple and budget-friendly as possible.
 
+![PI-hole Dashboard](../../assets/screenshots/pi-hole.png)
+
 ## Overview
 
 - **Devices**: Single PC acting as NAS, hypervisor, and DNS filter
