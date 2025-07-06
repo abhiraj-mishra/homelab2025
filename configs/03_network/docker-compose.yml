@@ -9,7 +9,7 @@ services:
       - "80:80"
     environment:
       TZ: 'Asia/Kolkata'
-      WEBPASSWORD: 'your_password_here'
+      WEBPASSWORD: $yourpassword
     volumes:
       - './etc-pihole/:/etc/pihole/'
       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'

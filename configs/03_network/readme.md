@@ -57,4 +57,4 @@ To block ads and trackers network-wide, I deployed Pi-hole in an LXC container.
     ```bash
      http://<your-pihole-ip>/admin
     ```
-7. On both your PC and phone, manually set the DNS to your Pi-hole IP (192.168.1.X)
+7. On both your PC and phone, manually set the DNS to your Pi-hole IP `192.168.1.X`
